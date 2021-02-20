@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Ayush Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo/d1.png")
+                | ADA
+            li #[a(href="/") Home]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us ]
+
+    section#introSection 
+        div Welcome To The Dance Academy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Missions
+        div.card
+            h3 Dance Perfection 
+            div.card-box
+                div.card-img
+                    img(src="/static/logo/d1.png") 
+                div.card-content
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ab 
+        div.card
+            h3 Dance The Way You Like
+            div.card-box
+                div.card-img
+                    img(src="/static/logo/d2.jpg")  
+                div.card-content
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ab 
+        div.card
+            h3 Expertise Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/logo/d3.jpg")  
+                div.card-content
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ab 
+        
+
+    section#sponsersSection 
+        h2 Our Sponsers
+        div#sponsers
+            img(src="/static/logo/logo1.png",class="spimage")
+            img(src="/static/logo/logo2.png",class="spimage")
+            img(src="/static/logo/logo3.png",class="spimage")
+            img(src="/static/logo/logo4.png",class="spimage")
+
+
+    footer#footer 
+        | Copyright © 2019 AyushDanceAcademy.com | All Rights Reserved
+
+    script
+      include ../static/index.js
